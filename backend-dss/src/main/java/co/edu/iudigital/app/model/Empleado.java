@@ -24,7 +24,7 @@ public class Empleado implements Serializable{
 	
 	private Double sueldo;
 	
-	@ManyToOne
+	@ManyToOne 
 	@JoinColumn(name = "usuarios_id")
 	private Usuario usuario;
 	

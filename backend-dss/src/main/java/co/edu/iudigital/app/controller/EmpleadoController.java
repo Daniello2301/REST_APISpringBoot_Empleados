@@ -43,6 +43,12 @@ public class EmpleadoController{
 		return ResponseEntity.ok().body(response);
 	}
 	
+
+
+
+
+
+	
 	@Secured({"ROLE_ADMIN", "ROLE_USER"})
 	@GetMapping("/{id}")
 	public ResponseEntity<EmpleadoDto> show(@PathVariable Long id) throws RestException {
@@ -50,6 +56,12 @@ public class EmpleadoController{
 		return ResponseEntity.ok().body(response);
 	}
 	
+
+
+
+
+
+
 	@Secured({"ROLE_ADMIN", "ROLE_USER"})
 	@PostMapping(consumes = "application/json")
 	@ResponseStatus(code = HttpStatus.CREATED) //201
